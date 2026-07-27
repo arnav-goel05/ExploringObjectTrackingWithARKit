@@ -1,6 +1,39 @@
-# Exploring object tracking with ARKit
-Stroke affects more than ten thousand Singaporeans every year. For many survivors, the way doctors currently assess the knock on effects is still very manual, imprecise, and heavily dependent on observation.
+# Vision Pro Hand Dexterity Assessment
 
-Together with the NUH Department of Rehabilitation, I am developing a 3D hand eye coordination assessment tool for hand dexterity in Swift and SwiftUI, built with ARKit and RealityKit for the Apple Vision Pro. The test measures how closely a patient can follow an ideal path between two points, capturing even the smallest deviations in finger movement.
+A visionOS research prototype developed with the National University Hospital Department of
+Rehabilitation to support more precise hand-dexterity assessment during stroke rehabilitation.
 
-This project has taken me through the full Software Development Life Cycle, from gathering requirements to design and build, and it is now in clinical trials.
+Clinical hand-dexterity assessments often rely on observation, which can make small movement
+deviations difficult to quantify consistently or compare across sessions. This application guides a
+patient through structured movement tasks in 3D and records how closely their fingertip follows the
+intended path.
+
+## What the application does
+
+- Calibrates and tracks fingertip movement using ARKit hand tracking.
+- Renders straight-line and zigzag movement tasks in an immersive RealityKit scene.
+- Measures movement distance and deviation from the intended path.
+- Presents an assessment summary and supports structured result export.
+
+## Technology
+
+- Swift and SwiftUI
+- visionOS
+- ARKit and RealityKit
+- `simd` for spatial calculations
+
+## Project status
+
+The prototype was developed through requirements gathering, design, implementation, and patient
+testing with clinical stakeholders. It is currently being evaluated in clinical trials with NUH, and
+the underlying assessment method is patent pending.
+
+## Running the project
+
+Open `ObjectTracking.xcodeproj` in a version of Xcode with visionOS support, select the
+`ObjectTracking` scheme, and choose a compatible visionOS destination.
+
+## License and attribution
+
+This repository includes code derived from Apple sample material. See [`LICENSE.txt`](LICENSE.txt)
+for the applicable Apple terms.
